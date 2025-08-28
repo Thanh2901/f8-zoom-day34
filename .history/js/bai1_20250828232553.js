@@ -9,7 +9,6 @@ const App = () => {
 
   return (
     <div>
-      {/* toan tu 3 ngoi */}
       <h1 className={count > 0 ? "positive" : count < 0 ? "negative" : "zero"}>
         {count}
       </h1>
