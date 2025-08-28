@@ -10,6 +10,7 @@ body {
   background: #f4f4f4;
 }
 
+/* Style cho nav */
 nav {
   background-color: #333;
   padding: 10px 0;
@@ -19,7 +20,7 @@ nav {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 30px; /* Khoảng cách giữa các item */
 }
 
 .nav-list li a {
@@ -33,5 +34,5 @@ nav {
 
 .nav-list li a:hover {
   background-color: #555;
-  color: #ffd700;
+  color: #ffd700; /* Đổi màu chữ khi hover */
 }
