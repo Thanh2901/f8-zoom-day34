@@ -4,10 +4,6 @@ body {
   margin-top: 50px;
 }
 
-h1 {
-  color: yellow;
-}
-
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -34,11 +30,7 @@ h1 {
 }
 
 .bg-dark-subtle {
-  background-color: #989191;
-}
-
-.bg-light {
-  background-color: antiquewhite;
+  background-color: #333;
 }
 
 input {

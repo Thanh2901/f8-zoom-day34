@@ -1,7 +1,7 @@
 const ProfileCardApp = () => {
   return (
     <>
-      <h1>Profile card</h1>
+      <h1>Hello</h1>
     </>
   );
 };

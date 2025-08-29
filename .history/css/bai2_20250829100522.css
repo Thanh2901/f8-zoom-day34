@@ -4,10 +4,6 @@ body {
   margin-top: 50px;
 }
 
-h1 {
-  color: yellow;
-}
-
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -30,15 +26,7 @@ h1 {
 }
 
 .gap-2 {
-  gap: 2rem;
-}
-
-.bg-dark-subtle {
-  background-color: #989191;
-}
-
-.bg-light {
-  background-color: antiquewhite;
+  gap: 2;
 }
 
 input {

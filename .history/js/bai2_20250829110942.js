@@ -1,0 +1,55 @@
+const ToDoApp = () => {
+  console.log("ToDoApp is called");
+  const [input, setInput] = React.useState("");
+  const [tasklist, setTaskList] = React.useState([]);
+  const [taskCount, setTaskCount] = React.useState(0);
+
+  const task = {
+    id: Date.now(),
+    text: "Nội dung task",
+    completed: false,
+  };
+
+  function addTask() {
+    if (input.trim() === " ") return;
+    const newTask = {
+      id: Date.now(),
+      text: input,
+      completed: false,
+    };
+    setTaskList([...tasklist, newTask]); // = setTaskList(taskList.push(newTask))
+    console.log(newTask.text);
+    setInput(""); // reset
+  }
+
+  function taskAsComplete() {
+    return NaN;
+  }
+
+  return (
+    <div className="container border-1-dark d-flex flex-column p-1 gap-2 bg-dark-subtle">
+      <div className="input-bar container">
+        <input
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Fill new task"
+        ></input>
+        <button onClick={addTask}>Add new task</button>
+      </div>
+      <div className="task-list container">
+        <ul>
+          <li className="task border-1-dark bg-light">
+            <p>{taskList[0].text}</p>
+            <div className="button-group">
+              <input type="checkbox"></input>
+              <button>Delete</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<ToDoApp />);

@@ -27,16 +27,14 @@ const ToDoApp = () => {
       taskList.map((task) =>
         task.id === id ? { ...task, completed: !task.completed } : task
       )
+      console.log(`${task.text} is completed`)
     );
   }
 
-  function taskAsDeleted(id) {
-    setTaskList(taskList.filter((task) => task.id !== id));
-  }
+  function taskAsDeleted() {}
 
   return (
     <div className="container border-1-dark d-flex flex-column p-1 gap-2 bg-dark-subtle">
-      <h1>Todo App</h1>
       <div className="input-bar container">
         <input
           value={input}
@@ -61,7 +59,7 @@ const ToDoApp = () => {
                   type="checkbox"
                   onClick={() => taskAsCompleted(task.id)}
                 ></input>
-                <button onClick={() => taskAsDeleted(task.id)}>Delete</button>
+                <button>Delete</button>
               </div>
             </li>
           ))}

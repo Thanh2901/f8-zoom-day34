@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between; /* Các phần tử cách đều nhau */
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  width: 400px; /* Có thể điều chỉnh */
+  margin: 10px auto;
+}
+
+.border-1-dark {
+  border: 1px solid black;
+}

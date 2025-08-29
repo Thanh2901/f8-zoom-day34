@@ -36,7 +36,6 @@ const ToDoApp = () => {
 
   return (
     <div className="container border-1-dark d-flex flex-column p-1 gap-2 bg-dark-subtle">
-      <h1>Todo App</h1>
       <div className="input-bar container">
         <input
           value={input}

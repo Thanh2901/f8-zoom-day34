@@ -4,41 +4,9 @@ body {
   margin-top: 50px;
 }
 
-h1 {
-  color: yellow;
-}
-
 .container {
   max-width: 960px;
   margin: 0 auto;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
-.p-1 {
-  padding: 1rem;
-}
-
-.gap-2 {
-  gap: 2rem;
-}
-
-.bg-dark-subtle {
-  background-color: #989191;
-}
-
-.bg-light {
-  background-color: antiquewhite;
 }
 
 input {
@@ -60,7 +28,7 @@ button {
   gap: 1rem;
   align-items: center;
   padding: 5px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .button-group {
